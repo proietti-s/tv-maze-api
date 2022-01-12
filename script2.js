@@ -25,6 +25,9 @@ getAllShows();
 
 //----------------Chiamata Get by Search--------------//
 const getShowsBySrc = function () {
+  show_details.innerHTML = "";
+  show_details.style.display = "none";
+
   scores.innerHTML = "";
   noScores.innerHTML = "";
 

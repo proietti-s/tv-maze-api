@@ -74,18 +74,18 @@ body {
   display: grid;
   grid-template-columns: 225px[first] 225px[second];
   grid-template-rows: repeat(5, 1fr);
-  padding: 1.5rem;
   justify-content: space-evenly;
 }
 
 .scoreBox_show {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 0.5rem 0rem;
   padding: 0.5rem;
   border-radius: 0.5rem;
-  background-color: #ff9797;
+  background-color: #5201013c;
   box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.5);
   position: relative;
 }
@@ -144,7 +144,22 @@ body {
   
 }
 
-
 .info_img{
   display: inline-block;
+}
+
+.foot{
+  position: sticky;
+  bottom: 0;
+  background-color: #520101;
+  padding: 2.5rem 0rem;
+  z-index: 3;
+}
+
+.wrapper{
+  max-width: 600px;
+  max-height: auto;
+  overflow: hidden;
+  margin: 1rem auto;
+  
 }
