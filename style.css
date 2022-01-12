@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Source+Sans+Pro&display=swap");
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffcccc;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1rem;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background-color: #520101;
+  padding: 1.5rem 0rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo a{
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  margin-left: 0.5rem;
+  padding-left: 1rem;
+  cursor: pointer;
+}
+
+.formBox {
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  position: relative;
+}
+
+.formBox_input {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  color: black;
+  padding: 0rem 1rem;
+}
+
+.formBox_btn {
+  cursor: pointer;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  background-color:transparent;
+  color: #520101;
+  position: absolute;
+  right: 0px;
+  top: 0;
+}
+
+.noScores {
+  display: none;
+  margin: 8rem auto;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #520101;
+}
+
+.scoreBox {
+  display: grid;
+  grid-template-columns: 225px[first] 225px[second];
+  grid-template-rows: repeat(5, 1fr);
+  padding: 1.5rem;
+  justify-content: space-evenly;
+}
+
+.scoreBox_show {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0.5rem 0rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #ff9797;
+  box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.list_img {
+  width: 210px;
+  height: 295px;
+}
+
+.list_description {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+
+.list_description li:first-child {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.btn_info {
+  width: 40px;
+  height: 25px;
+  background-color: #520101;
+  color: #ffcccc;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 7px;
+  z-index: 2;
+}
+
+.infoBox{
+  display: none;
+  width: 600px;
+  margin: 8rem auto;
+  padding: 0.5rem;
+  background-color: #5201013c;
+  border-radius: 0.5rem;
+
+}
+
+.global_info{
+  display: flex;
+  flex-direction: row;
+}
+.info_details{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  word-break: break-word;
+  
+}
+
+
+.info_img{
+  display: inline-block;
+}
